@@ -1,1 +1,34 @@
 :root{--wine:#592735;--deep:#381b28;--ivory:#fcf9f3;--soft:#f3eae1;--gold:#bf9e72;--ink:#4e4240}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font:15px/1.8 "DM Sans",sans-serif}.site{max-width:760px;margin:auto;text-align:center;overflow:hidden}h1,h2,h3{font-family:"Playfair Display",serif;font-weight:400;line-height:1.25}h1{font-size:clamp(48px,10vw,82px);margin:10px 0}h2{font-size:clamp(33px,7vw,47px);margin:15px 0 25px}section{padding:85px 24px}.eyebrow{font-size:10px;font-weight:600;letter-spacing:3px}.accent{color:var(--gold)}.hero{min-height:100svh;padding:50px 25px;background:linear-gradient(160deg,#381b28cc,#562938de),url("assets/cover.webp") center/cover;display:grid;place-items:center;color:#fff9f2}.hero-inner{width:100%}.hero p{letter-spacing:1.4px}.guest-label{margin-top:50px}.ornament{font-size:27px;color:var(--gold);margin:10px}.script{font-family:"Great Vibes",cursive;font-size:clamp(48px,9vw,68px);line-height:1.4;margin:10px}.couple-grid{display:grid;gap:40px;margin-top:40px}.couple-grid img{width:min(100%,285px);aspect-ratio:3/4;object-fit:cover;border-radius:180px 180px 4px 4px}.couple-grid article>p{margin:4px}.wine{background:var(--wine);color:#fff9f2}.soft{background:var(--soft)}.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.timer>div{border:1px solid #bf9e7277;padding:13px 3px}.timer strong{font:32px "Playfair Display",serif;display:block}.timer small{font-size:9px;letter-spacing:1px}.panel{background:#ffffffd9;border:1px solid #e6d9c9;padding:34px 18px;margin:24px auto;box-shadow:0 10px 40px #391e2410}.panel h3{font-size:24px}.detail{font:23px "Playfair Display",serif;overflow-wrap:anywhere}.button{display:inline-flex;justify-content:center;align-items:center;min-height:46px;border:1px solid var(--gold);padding:10px 20px;margin-top:10px;color:var(--wine);background:transparent;text-decoration:none;letter-spacing:1px;font:600 11px "DM Sans",sans-serif;cursor:pointer;transition:background .2s}.button:hover{background:var(--gold);color:#25191d}.button.solid{background:var(--wine);color:white;border-color:var(--wine)}.button.solid:hover{background:var(--deep)}.button.light{color:white}.button[aria-disabled="true"]{opacity:.5;pointer-events:none}.form{display:grid;gap:12px;text-align:left;max-width:510px;margin:24px auto}.form label{font-size:12px;font-weight:600}.form input,.form select,.form textarea{width:100%;padding:14px;border:1px solid #dacdc0;border-radius:2px;background:#fff;color:var(--ink);font:16px "DM Sans",sans-serif}.form textarea{min-height:110px;resize:vertical}.form button{width:100%}.form button:disabled{opacity:.55;cursor:wait}.trap{display:none}.hint{font-size:11px;margin:0;color:#756864}.wishes-list{display:grid;gap:13px;text-align:left;max-height:480px;overflow:auto}.wish{background:#fff;padding:17px 19px;border-left:2px solid var(--gold);overflow-wrap:anywhere}.wish strong{color:var(--wine)}.wish p{margin:4px 0 0;white-space:pre-wrap}.divider{width:60px;height:1px;background:var(--gold);margin:26px auto}footer{padding:65px 20px}.music{position:fixed;right:18px;bottom:18px;z-index:10;width:48px;height:48px;border:1px solid var(--gold);border-radius:50%;background:var(--wine);color:white;cursor:pointer;font-size:20px;box-shadow:0 4px 18px #0003}.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}@media(min-width:600px){.couple-grid{grid-template-columns:1fr 1fr;gap:20px}.timer{gap:15px}.timer strong{font-size:42px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+
+/* Premium editorial refinements — photo-ready design */
+body{background:#ede5dc}
+.site{background:var(--ivory);box-shadow:0 0 75px #2c18211a}
+.hero{position:relative;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:19px;z-index:-1;border:1px solid #ead4aa80;pointer-events:none}
+.hero::after{content:"✦";position:absolute;bottom:33px;left:50%;transform:translateX(-50%);font-size:18px;color:#d1b38a;opacity:.9;pointer-events:none}
+.hero-inner{max-width:580px}
+.hero h1{text-wrap:balance;text-shadow:0 2px 20px #160b1266}
+.hero .eyebrow{letter-spacing:5px}
+.hero .ornament{display:flex;align-items:center;justify-content:center;gap:17px}
+.hero .ornament::before,.hero .ornament::after{content:"";display:block;height:1px;width:52px;background:#d9bf9870}
+section:not(.wine):not(.soft){background:var(--ivory)}
+section h2{letter-spacing:-.025em;text-wrap:balance}
+section>p:not(.eyebrow){max-width:520px;margin-left:auto;margin-right:auto}
+.couple-grid article{position:relative;padding:12px 5px 22px}
+.couple-grid img{display:block;margin:0 auto 24px;border:5px solid #fff8ef;outline:1px solid #cbb392;box-shadow:0 16px 32px #2d142316}
+.couple-grid article::after{content:"✧";display:block;color:var(--gold);margin:10px auto;font-size:22px}
+.panel{border:1px solid #d8c2ad;outline:1px solid #d8c2ad50;outline-offset:5px}
+.panel .eyebrow{color:var(--wine)}
+.button{border-radius:2px;letter-spacing:1.5px}
+.button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.music:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wine{background:linear-gradient(135deg,#642d3f,var(--deep))}
+#countdown{background:radial-gradient(circle at 50% 0%,#865067,var(--deep) 85%)}
+#countdown .timer>div{background:#ffffff0b}
+#location .panel{background:#fffaf5}
+#rsvp .form{background:#fffcf8;border:1px solid #e6d7c8;padding:24px;box-shadow:0 14px 40px #4527350c}
+#rsvp .form label{letter-spacing:.3px}
+.wishes-list{padding:4px}
+.wish{box-shadow:0 5px 16px #3a23300b}
+.music{backdrop-filter:blur(5px)}
+@media(min-width:760px){.site{margin:28px auto;border:1px solid #e6d8cc}.hero{min-height:min(900px,100svh)}}
+@media(max-width:420px){.hero::before{inset:12px}.hero .eyebrow{letter-spacing:3px}.panel{padding:28px 15px}#rsvp .form{padding:19px}}
