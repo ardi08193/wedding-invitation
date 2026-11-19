@@ -15,6 +15,24 @@ window.WEDDING_CONFIG = {
   bankName: "Bank BNI",
   bankAccount: "7834289263",
   giftAddress: "Jl. Proklamasi No.74, Kebon Jeruk, Jakarta Barat 11780",
+  // Love Story: replace these sample placeholders with your real story.
+  loveStory: [
+    {
+      date: "OUR FIRST CHAPTER",
+      title: "The First Meeting",
+      text: "The story of how our paths first crossed will be shared here."
+    },
+    {
+      date: "A SPECIAL CHAPTER",
+      title: "Growing Together",
+      text: "A memorable moment in our journey together will be shared here."
+    },
+    {
+      date: "OUR NEXT CHAPTER",
+      title: "Forever Begins",
+      text: "Our story continues as we look forward to the next chapter."
+    }
+  ],
   // Paste Google Apps Script Web App /exec URL after deployment.
   scriptURL: ""
 };
