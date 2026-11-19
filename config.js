@@ -1,6 +1,6 @@
 // Update these values before publishing the invitation to guests.
 window.WEDDING_CONFIG = {
-  groom: "Biru Lau Wibisono",
+  groom: "Biru Laut Wibisono",
   bride: "Ratih Anjani",
   groomFather: "Arya Wibisono",
   groomMother: "Sri Wibisono",
