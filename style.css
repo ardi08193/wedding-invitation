@@ -301,3 +301,42 @@ footer .script{color:#fff4ea;line-height:1.7}
   #couple .couple-grid .script{font-size:clamp(38px,9.2vw,52px)}
   #couple .couple-divider{margin:25px auto 32px}
 }
+
+
+/* Center the stacked couple portraits and captions more precisely */
+#couple .couple-grid{
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:0;
+  padding-right:0;
+  justify-content:center;
+  text-align:center;
+}
+#couple .couple-grid article{
+  box-sizing:border-box;
+  margin-left:auto;
+  margin-right:auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  padding-left:12px;
+  padding-right:12px;
+}
+#couple .couple-grid article img{
+  margin-left:auto;
+  margin-right:auto;
+  object-position:center center;
+}
+#couple .couple-grid article .script,
+#couple .couple-grid article p{
+  width:100%;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+#couple .couple-divider{
+  align-self:center;
+  margin-left:auto;
+  margin-right:auto;
+}
