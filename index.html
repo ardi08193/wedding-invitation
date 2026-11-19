@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#592735">
+<meta name="description" content="Undangan pernikahan digital">
+<title>Our Wedding | Digital Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script src="config.js" defer></script><script src="script.js" defer></script>
+</head>
+<body>
+<div class="site">
+<header class="hero" id="cover">
+ <div class="hero-inner"><p class="eyebrow">THE WEDDING OF</p><h1 id="heroNames">XXX & XXX</h1><div class="ornament">✦</div><p id="heroDate">XXX</p><p class="guest-label">Dear, <strong id="guestName">Honored Guest</strong></p><a class="button light" href="#couple">OPEN INVITATION ↓</a></div>
+</header>
+<main>
+<section id="couple" class="reveal">
+<p class="eyebrow accent">TOGETHER WITH OUR FAMILIES</p><h2>Our Beautiful Beginning</h2><p>With love and gratitude, we joyfully invite you to celebrate our wedding.</p>
+<div class="couple-grid"><article><img src="assets/groom.webp" alt="Groom portrait" loading="lazy" onerror="this.style.display='none'"><h3 class="script" id="groom">XXX</h3><p>Son of</p><p id="groomParents">Mr. XXX & Mrs. XXX</p></article><article><img src="assets/bride.webp" alt="Bride portrait" loading="lazy" onerror="this.style.display='none'"><h3 class="script" id="bride">XXX</h3><p>Daughter of</p><p id="brideParents">Mr. XXX & Mrs. XXX</p></article></div>
+</section>
+<section class="wine reveal" id="countdown"><p class="eyebrow accent">COUNTING THE DAYS</p><h2>Until We Say I Do</h2><div class="timer"><div><strong id="days">--</strong><small>DAYS</small></div><div><strong id="hours">--</strong><small>HOURS</small></div><div><strong id="minutes">--</strong><small>MINUTES</small></div><div><strong id="seconds">--</strong><small>SECONDS</small></div></div></section>
+<section id="event" class="reveal"><p class="eyebrow accent">THE CELEBRATION</p><h2>Save Our Date</h2><article class="panel"><h3>Wedding Ceremony & Reception</h3><p class="detail" id="eventDate">XXX</p><p id="eventVenue">XXX</p><a class="button solid" id="calendarLink" target="_blank" rel="noopener noreferrer">ADD TO GOOGLE CALENDAR</a></article></section>
+<section id="location" class="soft reveal"><p class="eyebrow accent">THE VENUE</p><h2>Where Love Meets</h2><article class="panel"><p id="venueAddress">XXX</p><a id="mapsLink" class="button solid" target="_blank" rel="noopener noreferrer">OPEN GOOGLE MAPS</a></article></section>
+<section id="rsvp" class="reveal"><p class="eyebrow accent">KINDLY REPLY</p><h2>RSVP</h2><p>Please let us know if you can celebrate with us.</p>
+<form id="rsvpForm" class="form">
+<label for="fullName">Full Name</label><input name="name" id="fullName" maxlength="120" minlength="2" required placeholder="Your name">
+<label for="attendance">Attendance Confirmation</label><select name="attendance" id="attendance" required><option value="">Select attendance</option><option value="Attending">Attending</option><option value="Not Attending">Not Attending</option></select>
+<label for="guests">Number of Guests</label><select name="guests" id="guests" required><option value="1">1 guest</option><option value="2">2 guests</option><option value="3">3 guests</option><option value="4">4 guests</option><option value="5">5 guests</option></select>
+<label for="message">Wishes & Messages</label><textarea name="message" id="message" maxlength="1000" placeholder="Leave your lovely wishes..."></textarea>
+<input class="trap" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<p class="hint">Nama dan ucapan Anda akan ditampilkan secara publik di halaman undangan.</p>
+<button type="submit" id="submitBtn" class="button solid">SEND RSVP</button><p id="status" role="status" aria-live="polite"></p>
+</form></section>
+<section id="wishes" class="soft reveal"><p class="eyebrow accent">WORDS OF LOVE</p><h2>Wedding Wishes</h2><div id="wishesList" class="wishes-list"><p>Guest wishes will appear here.</p></div></section>
+<section id="gifts" class="reveal"><p class="eyebrow accent">A LITTLE GIFT</p><h2>Wanna give us some gifts?</h2><p>Your presence and prayers mean the world to us.</p><article class="panel"><p class="eyebrow">BANK TRANSFER</p><h3 id="bankName">XXX</h3><p class="detail" id="bankAccount">XXX</p><button type="button" id="copyBank" class="button">COPY ACCOUNT NUMBER</button><div class="divider"></div><p class="eyebrow">GIFT DELIVERY ADDRESS</p><p id="giftAddress">XXX</p><button type="button" id="copyAddress" class="button">COPY ADDRESS</button></article></section>
+</main><footer class="wine"><p class="eyebrow accent">WITH ALL OUR LOVE</p><h2 class="script" id="closingNames">XXX & XXX</h2><p>Thank you for your love and prayers.</p></footer>
+</div>
+<button id="musicButton" class="music" type="button" aria-label="Toggle music" aria-pressed="false">♫</button><audio id="bgMusic" preload="none" loop src="assets/music.mp3"></audio>
+</body></html>
