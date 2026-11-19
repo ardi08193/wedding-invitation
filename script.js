@@ -10,6 +10,16 @@ fill("groomParents","Mr. "+c.groomFather+" & Mrs. "+c.groomMother);
 fill("brideParents","Mr. "+c.brideFather+" & Mrs. "+c.brideMother);
 fill("eventDate",c.dateLabel);fill("eventVenue",c.venue);fill("venueAddress",c.address);
 fill("bankName",c.bankName);fill("bankAccount",c.bankAccount);fill("giftAddress",c.giftAddress);
+
+if(Array.isArray(c.loveStory)){
+  c.loveStory.slice(0,4).forEach((chapter,index)=>{
+    const n=index+1;
+    for(const [suffix,value] of [["Date",chapter.date],["Title",chapter.title],["Text",chapter.text]]){
+      if(value!=null) fill("story"+n+suffix,String(value));
+    }
+  });
+}
+
 const guest = new URLSearchParams(location.search).get("to");
 if (guest) fill("guestName",guest.slice(0,100));
 $("mapsLink").href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(c.address);
