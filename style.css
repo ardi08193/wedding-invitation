@@ -32,3 +32,27 @@ section>p:not(.eyebrow){max-width:520px;margin-left:auto;margin-right:auto}
 .music{backdrop-filter:blur(5px)}
 @media(min-width:760px){.site{margin:28px auto;border:1px solid #e6d8cc}.hero{min-height:min(900px,100svh)}}
 @media(max-width:420px){.hero::before{inset:12px}.hero .eyebrow{letter-spacing:3px}.panel{padding:28px 15px}#rsvp .form{padding:19px}}
+
+/* Brittany Signature handwriting for wedding names.
+   Upload a legitimately licensed WebFont file as assets/BrittanySignature.woff2.
+   Great Vibes remains the graceful fallback until the file is added. */
+@font-face{
+ font-family:"Brittany Signature";
+ src:url("assets/BrittanySignature.woff2") format("woff2");
+ font-style:normal;
+ font-weight:400;
+ font-display:swap;
+}
+.hero h1,
+.couple-grid .script,
+footer .script{
+ font-family:"Brittany Signature","Great Vibes",cursive;
+ font-weight:400;
+ letter-spacing:0;
+ line-height:1.65;
+ text-transform:none;
+ overflow-wrap:anywhere;
+}
+.hero h1{font-size:clamp(45px,9vw,78px)}
+.couple-grid .script{font-size:clamp(46px,8vw,65px)}
+footer .script{font-size:clamp(46px,8vw,70px)}
